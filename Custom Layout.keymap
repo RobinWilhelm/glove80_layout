@@ -269,63 +269,95 @@
 
 /* Custom Defined Behaviors */
 / {
-macros {
-    ZMK_MACRO(ascii_symbol_ae_lower,
+macros {   
+    ascii_symbol_ae_lower: ascii_symbol_ae_lower{
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <1>;
+        tap-ms = <1>;
         bindings
            = <&macro_press   &kp LALT>
            , <&macro_tap     &kp KP_N1 &kp KP_N3 &kp KP_N2>
            , <&macro_release &kp LALT>
            ;
-    )
-    ZMK_MACRO(ascii_symbol_ae_upper,
+    };
+    ascii_symbol_ae_upper: ascii_symbol_ae_upper{
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <1>;
+        tap-ms = <1>;
         bindings
            = <&macro_press   &kp LALT>
            , <&macro_tap     &kp KP_N1 &kp KP_N4 &kp KP_N2>
            , <&macro_release &kp LALT>
            ;
-    )
-    ZMK_MACRO(ascii_symbol_oe_lower,
+    };
+    ascii_symbol_oe_lower: ascii_symbol_oe_lower{
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <1>;
+        tap-ms = <1>;
         bindings
            = <&macro_press   &kp LALT>
            , <&macro_tap     &kp KP_N1 &kp KP_N4 &kp KP_N8>
            , <&macro_release &kp LALT>
            ;
-    )
-    ZMK_MACRO(ascii_symbol_oe_upper,
+    };
+    ascii_symbol_oe_upper: ascii_symbol_oe_upper{
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <1>;
+        tap-ms = <1>;
         bindings
            = <&macro_press   &kp LALT>
            , <&macro_tap     &kp KP_N1 &kp KP_N5 &kp KP_N3>
            , <&macro_release &kp LALT>
            ;
-    )
-    ZMK_MACRO(ascii_symbol_ue_lower,
+    };
+    ascii_symbol_ue_lower: ascii_symbol_ue_lower{
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <1>;
+        tap-ms = <1>;
         bindings
            = <&macro_press   &kp LALT>
            , <&macro_tap     &kp KP_N1 &kp KP_N2 &kp KP_N9>
            , <&macro_release &kp LALT>
            ;
-    )
-    ZMK_MACRO(ascii_symbol_ue_upper,
+    };
+    ascii_symbol_ue_upper: ascii_symbol_ue_upper{
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <1>;
+        tap-ms = <1>;
         bindings
            = <&macro_press   &kp LALT>
            , <&macro_tap     &kp KP_N1 &kp KP_N5 &kp KP_N4>
            , <&macro_release &kp LALT>
            ;
-    )
-    ZMK_MACRO(ascii_symbol_sz_lower,
+    };
+    ascii_symbol_sz_lower: ascii_symbol_sz_lower{
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <1>;
+        tap-ms = <1>;
         bindings
            = <&macro_press   &kp LALT>
            , <&macro_tap     &kp KP_N2 &kp KP_N2 &kp KP_N5>
            , <&macro_release &kp LALT>
            ;
-    )
-    ZMK_MACRO(ascii_symbol_sz_upper,
+    };
+    ascii_symbol_sz_upper: ascii_symbol_sz_upper{
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <1>;
+        tap-ms = <1>;
         bindings
            = <&macro_press   &kp LALT>
            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>
            , <&macro_release &kp LALT>
            ;
-    )
+    };
 };  
 
 behaviors {  
